@@ -1,0 +1,6 @@
+http://www.cs.huji.ac.il/~raananf/projects/dehaze_cl/results/index_comp_noise.html
+Road 1, 考=0.01
+Lawn 1, 考=0.01
+Mansion, 考=0.01
+Church, 考=0.01
+Reindeer, 考=0.01
