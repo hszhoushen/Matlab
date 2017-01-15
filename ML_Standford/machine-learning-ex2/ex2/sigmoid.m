@@ -9,8 +9,11 @@ g = zeros(size(z));
 % Instructions: Compute the sigmoid of each value of z (z can be a matrix,
 %               vector or scalar).
 
+g = exp(-z);
 
+danwei_juzhen = ones(size(z));
 
+g = danwei_juzhen./(danwei_juzhen + g);
 
 
 % =============================================================
