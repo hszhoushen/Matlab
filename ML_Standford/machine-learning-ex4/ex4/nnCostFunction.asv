@@ -75,6 +75,8 @@ a3 = sigmoid(z3);
 % y;
 % 5000 * 10
 size(a3)
+a3 = a3';
+
 % 5000 * 10
 yk = zeros( m, num_labels);
 
@@ -82,9 +84,8 @@ for i = 1: m
     yk(i, y(i)) = 1;
 end
 size(yk)
-size(a3)
 
-J = 1/m * sum(sum( -yk .* log(a3) - (1-yk)  .* log(1 - a3) ) );
+J = 1/m * sum( -yk.* log(a3) - (1-yk) .* log(1 - a3)) ;
 J
 
 
